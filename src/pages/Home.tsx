@@ -1,12 +1,16 @@
-import { Center } from "@chakra-ui/react"
-import AppButton from "../components/Button"
+import { Center, VStack } from "@chakra-ui/react";
+import AppForm from "../components/AppForm";
+import AppButton from "../components/Button";
 
-type Props = {}
+type Props = {};
 
-export const Home = (props: Props) => {
+export const Home = () => {
   return (
     <Center h="100vh">
-      <AppButton>Do Something!</AppButton>
+      <VStack>
+        <AppForm />
+        <AppButton>Do Something!</AppButton>
+      </VStack>
     </Center>
-  )
-}
+  );
+};
